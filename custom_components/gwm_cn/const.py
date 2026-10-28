@@ -63,6 +63,9 @@ AC_DEFAULT_DURATION_SECONDS = 15 * 60
 # 实体图片(device_tracker 显示集成 logo)
 ENTITY_PICTURE_URL = "/gwm_cn/icon.png"
 
+# 自定义设备图片
+CUSTOM_ENTITY_PICTURE_URL = "/local/picture/car.jpg"
+
 # 服务
 SERVICE_REFRESH = "refresh"
 
