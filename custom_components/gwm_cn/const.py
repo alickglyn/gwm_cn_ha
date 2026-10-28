@@ -64,7 +64,7 @@ AC_DEFAULT_DURATION_SECONDS = 15 * 60
 ENTITY_PICTURE_URL = "/gwm_cn/icon.png"
 
 # 自定义设备图片
-CUSTOM_ENTITY_PICTURE_URL = "/local/picture/car.jpg"
+CUSTOM_ENTITY_PICTURE_URL = ""
 
 # 服务
 SERVICE_REFRESH = "refresh"
