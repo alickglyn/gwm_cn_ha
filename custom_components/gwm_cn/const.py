@@ -1,4 +1,5 @@
 """Constants for the GWM China integration."""
+import os
 from __future__ import annotations
 
 # 集成 domain 与版本
@@ -63,8 +64,12 @@ AC_DEFAULT_DURATION_SECONDS = 15 * 60
 # 实体图片(device_tracker 显示集成 logo)
 ENTITY_PICTURE_URL = "/gwm_cn/icon.png"
 
-# 自定义设备图片
-CUSTOM_ENTITY_PICTURE_URL = ""
+# 自定义设备图片，增加判断流程不改变原有逻辑
+_car_image_path = "/config/www/picture/car.jpg"
+if os.path.exists(_car_image_path):
+    CUSTOM_ENTITY_PICTURE_URL = "/local/picture/car.jpg"
+else:
+    CUSTOM_ENTITY_PICTURE_URL = ENTITY_PICTURE_URL
 
 # 服务
 SERVICE_REFRESH = "refresh"
