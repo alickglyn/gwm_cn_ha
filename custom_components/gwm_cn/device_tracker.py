@@ -20,6 +20,7 @@ from .const import (
     ATTR_VIN,
     DOMAIN,
     ENTITY_PICTURE_URL,
+    CUSTOM_ENTITY_PICTURE_URL,
     VERSION,
 )
 
