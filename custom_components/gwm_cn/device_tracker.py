@@ -46,6 +46,7 @@ class GWMCarTracker(CoordinatorEntity, TrackerEntity):
         self._attr_translation_key = "vehicle_location"
         self._attr_icon = "mdi:car"
         # 用集成 logo 作为实体图片(由 __init__.py 注册的 /gwm_cn/icon.png 提供)
+        # CUSTOM_ENTITY_PICTURE_URL替换掉ENTITY_PICTURE_URL，增加自定义接口，无对应图片时保留原逻辑。
         self._attr_entity_picture = CUSTOM_ENTITY_PICTURE_URL
 
     @property
