@@ -1,6 +1,7 @@
 """Constants for the GWM China integration."""
-import os
 from __future__ import annotations
+
+import os
 
 # 集成 domain 与版本
 DOMAIN = "gwm_cn"
